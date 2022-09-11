@@ -101,6 +101,12 @@ export const WrapperDatePicker = styled.div`
     padding-left: 1rem;
     border-radius: 5px;
     width: 180px;
+
+    &:disabled {
+      opacity: 0.4;
+      color: ${({ theme }) => theme["gray-400"]};
+      cursor: not-allowed;
+    }
   }
 
   @media only screen and (max-width: 600px) {
@@ -121,5 +127,13 @@ export const WrapperDatePicker = styled.div`
       width: 100%;
       margin-top: 0.5rem;
     }
+  }
+`;
+
+export const Wrapper = styled.div`
+  width: 100%;
+  > p {
+    margin-bottom: 0.5rem;
+    color: ${({ theme }) => theme["gray-400"]};
   }
 `;
