@@ -87,7 +87,7 @@ export const Home = () => {
 
   const handleNotification = async (saleId: number) => {
     try {
-      //await api.get(`/sales/${saleId}/notification`);
+      await api.get(`/sales/${saleId}/notification`);
       toast.info("Notificação envidada com sucesso!");
     } catch (error) {
       console.error(error);
